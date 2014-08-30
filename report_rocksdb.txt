@@ -1,0 +1,78 @@
+##########rocksdb############
+
+1000w
+zadd: 13724.23 requests per second; consumed 728.638582 seconds
+set: 24813.78 requests per second; consumed 403.001838 seconds
+ %CPU %MEM
+195.7  8.2
+          disk0           disk1       cpu     load average
+    KB/t tps  MB/s     KB/t tps  MB/s  us sy id   1m   5m   15m
+   30.16  24  0.70   275.70  24  6.51  21 28 52  5.63 6.57 5.47
+
+
+2000w
+zadd: 8691.55 requests per second; consumed 1150.542205 seconds
+set: 22299.84 requests per second; consumed 448.433780 seconds
+ %CPU %MEM
+ 46.5  9.1
+          disk0           disk1       cpu     load average
+    KB/t tps  MB/s     KB/t tps  MB/s  us sy id   1m   5m   15m
+   30.09  17  0.51   302.67  34 10.11  23 33 44  7.31 6.28 5.33
+
+
+...
+
+
+
+6000w
+zadd: 10480.25 requests per second; consumed 954.175531 seconds
+set: 20827.72 requests per second; consumed 480.129320 seconds
+ %CPU %MEM
+  3.2  6.7
+          disk0           disk1       cpu     load average
+    KB/t tps  MB/s     KB/t tps  MB/s  us sy id   1m   5m   15m
+   53.86 286 15.05    45.56  13  0.57  21 24 55  6.03 7.31 5.97
+
+
+7000w
+zadd: 8221.44 requests per second; consumed 1216.331993 seconds
+set: 19102.19 requests per second; consumed 523.500206 seconds
+ %CPU %MEM
+157.7  9.9
+          disk0           disk1       cpu     load average
+    KB/t tps  MB/s     KB/t tps  MB/s  us sy id   1m   5m   15m
+   57.42 279 15.65    44.70  13  0.56  21 24 54  9.12 8.20 6.96
+
+
+8000w
+zadd: 8465.61 requests per second; consumed 1181.249364 seconds
+set: 15925.98 requests per second; consumed 627.904802 seconds
+ %CPU %MEM
+197.4  9.6
+          disk0           disk1       cpu     load average
+    KB/t tps  MB/s     KB/t tps  MB/s  us sy id   1m   5m   15m
+   60.97 273 16.28    44.36  13  0.54  22 25 53  6.20 7.36 6.70
+
+
+9000w
+zadd: 207.31 requests per second; consumed 48237.382209 seconds  // sleeping time :(
+set: 14033.32 requests per second; consumed 712.589917 seconds
+ %CPU %MEM
+198.8  7.1
+          disk0           disk1       cpu     load average
+    KB/t tps  MB/s     KB/t tps  MB/s  us sy id   1m   5m   15m
+   64.44 125  7.84    40.07   7  0.26  22 25 52  7.45 6.75 6.38
+
+
+10000w
+zadd: 6991.56 requests per second; consumed 1430.296305 seconds
+set: 10218.69 requests per second; consumed 978.599067 seconds
+ %CPU %MEM
+140.4  8.1
+          disk0           disk1       cpu     load average
+    KB/t tps  MB/s     KB/t tps  MB/s  us sy id   1m   5m   15m
+   67.62 126  8.33    40.13   6  0.25  23 26 52  7.18 7.64 7.30
+
+
+rocksdb used 57679 seconds in total (including sleeping time :(  )
+
